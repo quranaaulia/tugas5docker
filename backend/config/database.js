@@ -1,8 +1,7 @@
-import { Sequelize } from "sequelize";
+const Sequelize = require('sequelize');
 
-const db = new Sequelize("notesnana", "admin", "nana", {
-    host: "34.135.131.201",
-    dialect: "mysql",
+const sequelize = new Sequelize('notesnana', 'admin', 'nana', {
+  host: '34.135.131.201',
+  dialect: 'mysql',
+  port: 3000
 });
-
-export default db;
